@@ -1,0 +1,60 @@
+/* Общие стили */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(52, 170, 212);
+    font-family: 'SchoolBook', sans-serif;
+}
+
+/* Шапка сайта */
+.header {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo {
+    width: 254px;
+    height: 251px;
+    margin: 0 auto;
+    border: 1px solid white;
+    transform: skew(20deg);
+}
+
+.company-name {
+    font-size: 48px;
+    color: black;
+    text-shadow: 2px 2px 2px white;
+}
+
+.description {
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Меню */
+.menu {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(52, 170, 212, 0.8);
+    padding: 10px;
+}
+
+.menu-item {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Основной контент */
+.content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
