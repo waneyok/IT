@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Туристическая фирма "Панда"</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="header-top">
+            <div class="header-left">
+                <img src="i.png" alt="Логотип Панда" class="logo">
+                <div class="company-info">
+                    <h1 class="company-name">Панда</h1>
+                    <p class="company-description">Туристическая фирма</p>
+                </div>
+            </div>
+            <div class="header-center">
+                <p class="phone-numbers">8(4012)51-46-13, 51-46-12</p>
+            </div>
+            <div class="header-right">
+                <div class="header-icons">
+                    <div class="icon">🏠</div>
+                    <div class="icon">⚙️</div>
+                    <div class="icon">💬</div>
+                </div>
+            </div>
+        </div>
+        <nav class="navigation">
+            <a href="#" class="nav-button">Главная</a>
+            <a href="#" class="nav-button">О компании</a>
+            <a href="#" class="nav-button">Консультанты по отдыху</a>
+            <a href="#" class="nav-button">Туры</a>
+            <a href="#" class="nav-button">Телефоны</a>
+        </nav>
+    </header>
+
+    <!-- Баннер с изображениями -->
+    <section class="banner">
+        <div class="banner-image">
+            <img src="gavai.png" alt="Пляж с пальмами">
+        </div>
+        <div class="banner-image">
+            <img src="isef.png" alt="Бухта">
+        </div>
+        <div class="banner-image">
+            <img src="caption.png" alt="Пляж с горой">
+        </div>
+    </section>
+
+    <!-- Основной контент -->
+    <main class="main-content">
+        <!-- Левая колонка -->
+        <aside class="left-column">
+            <!-- Форма входа -->
+            <div class="login-container">
+                <form class="login-form">
+                    <label for="login">Логин</label>
+                    <input type="text" id="login" name="login" class="input-field">
+                    <label for="password">Пароль</label>
+                    <input type="password" id="password" name="password" class="input-field">
+                    <button type="submit" class="login-button">ВОЙТИ</button>
+                    <div class="login-links">
+                        <a href="#" class="link">Забыли пароль?</a>
+                        <a href="#" class="link">Регистрация</a>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Новости компании -->
+            <div class="news-container">
+                <h3 class="news-title">Новости компании</h3>
+                <ul class="news-list">
+                    <li><a href="#" class="news-link">Оформление ВИЗ -></a></li>
+                    <li><a href="#" class="news-link">Горячие туры -></a></li>
+                    <li><a href="#" class="news-link">Все наши новости -></a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Правая колонка -->
+        <section class="right-column">
+            <h2 class="tours-title">Наши туры: автобусные туры, горячие туры, новогодние туры...</h2>
+            
+            <div class="tours-grid">
+                <div class="tour-card">
+                    <div class="tour-image">
+                        <img src="bus.png" alt="Автобусные туры">
+                    </div>
+                    <h3 class="tour-name">Автобусные туры</h3>
+                </div>
+
+                <div class="tour-card">
+                    <div class="tour-image">
+                        <img src="merry.png" alt="Свадебные туры">
+                    </div>
+                    <h3 class="tour-name">Свадебные туры</h3>
+                </div>
+
+                <div class="tour-card">
+                    <div class="tour-image">
+                        <img src="beach.png" alt="Пляжный отдых">
+                    </div>
+                    <h3 class="tour-name">Пляжный отдых</h3>
+                </div>
+
+                <div class="tour-card">
+                    <div class="tour-image">
+                        <img src="bisness.png" alt="Бизнес туры">
+                    </div>
+                    <h3 class="tour-name">Бизнес туры</h3>
+                </div>
+
+                <div class="tour-card wide">
+                    <div class="tour-image">
+                        <img src="chill.png" alt="Отдых и лечение">
+                    </div>
+                    <h3 class="tour-name">Отдых и лечение</h3>
+                </div>
+            </div>
+
+            <!-- Речевой пузырь с пандой -->
+            <div class="speech-bubble-container">
+                <div class="speech-bubble">
+                    <p>Отдых требует подготовки....</p>
+                </div>
+                <img src="i.png" alt="Панда" class="panda-face">
+            </div>
+        </section>
+    </main>
+</body>
+</html>
