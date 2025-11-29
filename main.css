@@ -1,0 +1,733 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1f3a;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Шапка сайта */
+.header {
+    background-color: #1a1f3a;
+    padding: 20px;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.company-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.company-name {
+    font-size: 48px;
+    font-weight: bold;
+    color: #e0e0e0;
+    margin: 0;
+}
+
+.company-description {
+    font-size: 16px;
+    color: #b0b0b0;
+    margin: 0;
+}
+
+.header-center {
+    flex: 1;
+    text-align: center;
+}
+
+.phone-numbers {
+    font-size: 32px;
+    color: #e0e0e0;
+    font-weight: bold;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.header-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #4a90e2;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+/* Навигация */
+.navigation {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.nav-button {
+    background-color: #4a90e2;
+    color: #ffffff;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.nav-button:hover {
+    background-color: #357abd;
+}
+
+/* Баннер */
+.banner {
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.banner-image {
+    flex: 1;
+    max-width: 33.33%;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.banner-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Основной контент */
+.main-content {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Левая колонка */
+.left-column {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.login-container {
+    background-color: #4a90e2;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.login-form label {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.input-field {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.login-button {
+    background-color: #ffffff;
+    color: #4a90e2;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover {
+    background-color: #e0e0e0;
+}
+
+.login-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.link {
+    color: #ffffff;
+    text-decoration: underline;
+    font-size: 12px;
+}
+
+.news-container {
+    background-color: #4a90e2;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.news-title {
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.news-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.news-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.news-link:hover {
+    color: #e0e0e0;
+}
+
+/* Правая колонка */
+.right-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.tours-title {
+    font-size: 20px;
+    color: #e0e0e0;
+    margin-bottom: 20px;
+}
+
+.tours-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.tour-card {
+    background-color: #2a2f4a;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.tour-card:hover {
+    transform: translateY(-5px);
+}
+
+.tour-card.wide {
+    grid-column: span 2;
+}
+
+.tour-image {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+}
+
+.tour-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tour-name {
+    padding: 15px;
+    font-size: 16px;
+    color: #e0e0e0;
+    text-align: center;
+}
+
+/* Речевой пузырь */
+.speech-bubble-container {
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.speech-bubble {
+    background-color: #4a90e2;
+    border-radius: 50px;
+    padding: 15px 25px;
+    max-width: 400px;
+    position: relative;
+}
+
+.speech-bubble p {
+    color: #ffffff;
+    font-size: 14px;
+    margin: 0;
+}
+
+.panda-face {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 10px;
+}
+
+/* Адаптивность */
+
+/* Большие планшеты и маленькие десктопы (992px - 1200px) */
+@media (max-width: 1200px) {
+    .tours-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .tour-card.wide {
+        grid-column: span 3;
+    }
+    
+    .company-name {
+        font-size: 40px;
+    }
+    
+    .phone-numbers {
+        font-size: 28px;
+    }
+    
+    .main-content {
+        max-width: 100%;
+        padding: 15px;
+    }
+}
+
+/* Планшеты (768px - 992px) */
+@media (max-width: 992px) {
+    .header {
+        padding: 15px;
+    }
+    
+    .header-top {
+        flex-wrap: wrap;
+    }
+    
+    .header-center {
+        order: 3;
+        width: 100%;
+        margin-top: 15px;
+    }
+    
+    .phone-numbers {
+        font-size: 24px;
+    }
+    
+    .company-name {
+        font-size: 36px;
+    }
+    
+    .logo {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .navigation {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    
+    .nav-button {
+        padding: 10px 15px;
+        font-size: 14px;
+        flex: 1;
+        min-width: calc(50% - 4px);
+    }
+    
+    .banner {
+        padding: 15px;
+        gap: 8px;
+    }
+    
+    .banner-image {
+        height: 250px;
+    }
+    
+    .main-content {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .left-column {
+        width: 100%;
+    }
+    
+    .tours-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .tour-card.wide {
+        grid-column: span 2;
+    }
+    
+    .speech-bubble {
+        max-width: 100%;
+    }
+}
+
+/* Мобильные устройства (480px - 768px) */
+@media (max-width: 768px) {
+    .header {
+        padding: 10px;
+    }
+    
+    .header-top {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    
+    .header-left {
+        width: 100%;
+    }
+    
+    .header-center {
+        order: 2;
+        width: 100%;
+        text-align: left;
+        margin-top: 0;
+    }
+    
+    .phone-numbers {
+        font-size: 20px;
+    }
+    
+    .header-right {
+        order: 3;
+        width: 100%;
+        justify-content: flex-end;
+    }
+    
+    .company-name {
+        font-size: 32px;
+    }
+    
+    .company-description {
+        font-size: 14px;
+    }
+    
+    .logo {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .navigation {
+        flex-direction: column;
+        gap: 8px;
+        margin-top: 15px;
+    }
+    
+    .nav-button {
+        width: 100%;
+        padding: 12px;
+        font-size: 15px;
+    }
+    
+    .banner {
+        flex-direction: column;
+        padding: 10px;
+        gap: 10px;
+    }
+    
+    .banner-image {
+        max-width: 100%;
+        height: 200px;
+    }
+    
+    .main-content {
+        padding: 10px;
+        gap: 15px;
+    }
+    
+    .login-container,
+    .news-container {
+        padding: 15px;
+    }
+    
+    .tours-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+    
+    .tour-card.wide {
+        grid-column: span 1;
+    }
+    
+    .tour-image {
+        height: 180px;
+    }
+    
+    .tours-title {
+        font-size: 18px;
+    }
+    
+    .speech-bubble-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .speech-bubble {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .panda-face {
+        width: 50px;
+        height: 50px;
+        margin-top: 0;
+        align-self: center;
+    }
+}
+
+/* Маленькие мобильные устройства (до 480px) */
+@media (max-width: 480px) {
+    .header {
+        padding: 8px;
+    }
+    
+    .company-name {
+        font-size: 28px;
+    }
+    
+    .company-description {
+        font-size: 12px;
+    }
+    
+    .logo {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .phone-numbers {
+        font-size: 16px;
+    }
+    
+    .icon {
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+    }
+    
+    .header-icons {
+        gap: 10px;
+    }
+    
+    .nav-button {
+        padding: 10px;
+        font-size: 14px;
+    }
+    
+    .banner {
+        padding: 8px;
+    }
+    
+    .banner-image {
+        height: 150px;
+    }
+    
+    .main-content {
+        padding: 8px;
+    }
+    
+    .login-container,
+    .news-container {
+        padding: 12px;
+    }
+    
+    .input-field {
+        padding: 8px;
+        font-size: 14px;
+    }
+    
+    .login-button {
+        padding: 10px;
+        font-size: 14px;
+    }
+    
+    .login-form label {
+        font-size: 13px;
+    }
+    
+    .link {
+        font-size: 11px;
+    }
+    
+    .news-title {
+        font-size: 16px;
+    }
+    
+    .news-link {
+        font-size: 13px;
+    }
+    
+    .tours-title {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    
+    .tour-image {
+        height: 150px;
+    }
+    
+    .tour-name {
+        padding: 12px;
+        font-size: 14px;
+    }
+    
+    .speech-bubble {
+        padding: 12px 20px;
+        font-size: 13px;
+        border-radius: 30px;
+        max-width: 100%;
+        width: calc(100% - 20px);
+        box-sizing: border-box;
+        text-align: center;
+        margin: 0 10px 10px 10px;
+        order: 1;
+        align-self: center;
+    }
+    
+    .panda-face {
+        width: 45px;
+        height: 45px;
+        order: 2;
+        align-self: center;
+    }
+    
+    .speech-bubble-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+}
+
+/* Очень маленькие экраны (до 360px) */
+@media (max-width: 360px) {
+    .company-name {
+        font-size: 24px;
+    }
+    
+    .phone-numbers {
+        font-size: 14px;
+    }
+    
+    .banner-image {
+        height: 120px;
+    }
+    
+    .tour-image {
+        height: 120px;
+    }
+    
+    .tours-title {
+        font-size: 14px;
+    }
+    
+    .speech-bubble {
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+}
+
+/* Ландшафтная ориентация для мобильных */
+@media (max-width: 768px) and (orientation: landscape) {
+    .banner-image {
+        height: 150px;
+    }
+    
+    .header-top {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .header-center {
+        order: 0;
+        width: auto;
+        flex: 1;
+        text-align: center;
+    }
+    
+    .navigation {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .nav-button {
+        flex: 1;
+        min-width: calc(33.33% - 6px);
+    }
+}
+
+/* Улучшение для touch-устройств */
+@media (hover: none) and (pointer: coarse) {
+    .nav-button,
+    .login-button,
+    .link,
+    .news-link {
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .icon {
+        min-width: 44px;
+        min-height: 44px;
+    }
+}
